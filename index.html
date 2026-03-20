@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Espaço_Petisco_Cadarpio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="background">
+            <img src="img/logotemporaria.jfif" alt="">
+            <h1>Espaço Petisco</h1>
+            <h3 style="font-family: 'Times New Roman', Times, serif;">Av. Edson Magalhães, 17B Maracanaú</h3>
+            <h2 id="abertoufechado" style="font-family: 'Times New Roman', Times, serif;">Terça a domingo, 18:00 às
+                23:30Hrs</h2>
+        </div>
+    </header>
+
+    <main>
+        <!-- caso hajá alguma promçao por aqui -->
+    </main>
+    <div style="font-size: 25px; text-align: center;">
+        <h2>Hanbuguer</h2>
+    </div>
+    <section id="menu">
+        <!-- Produto 1 -->
+        <div class="secao">
+            <div class="imagem">
+                <img src="img/Hanbugher1.jpg" alt="">
+            </div>
+            <div class="texto">
+                <h2>Hanbughuer Smash</h2>
+                <p>Hanbughuer Smash com cebola, carne caseira, pao arabe, alface e queijo...</p>
+                <div class="preco">
+                    <h5>R$ 40,87</h5>
+                    <button data-name="Hanbuguer Smash" data-preco="40.87" id="addBotao"><i
+                            class="bi bi-cart-plus-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End produto 1 -->
+        <!-- Produto 2 -->
+        <div class="secao">
+            <div class="imagem">
+                <img src="img/Hanbugher1.jpg" alt="">
+            </div>
+            <div class="texto">
+                <h2>Hanbughuer Smash</h2>
+                <p>Hanbughuer Smash com cebola, carne caseira, pao arabe, alface e queijo...</p>
+                <div class="preco">
+                    <h5>R$ 40,87</h5>
+                    <button><i class="bi bi-cart-plus-fill"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- End Produto 2 -->
+        <!-- Produto 3 -->
+        <div class="secao">
+            <div class="imagem">
+                <img src="img/Hanbugher1.jpg" alt="">
+            </div>
+            <div class="texto">
+                <h2>Hanbughuer Smash</h2>
+                <p>Hanbughuer Smash com cebola, carne caseira, pao arabe, alface e queijo...</p>
+                <div class="preco">
+                    <h5>R$ 40,87</h5>
+                    <button><i class="bi bi-cart-plus-fill"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- End Produto 3 -->
+    </section>
+    <div style="font-size: 25px; text-align: center;">
+        <h2>Bebidas</h2>
+    </div>
+    <section>
+        <!-- bebida 1 -->
+        <div class="secao">
+            <div class="imagem">
+                <img src="img/Bebida.jpeg" alt="">
+            </div>
+            <div class="texto">
+                <h2>Hanbughuer Smash</h2>
+                <p>Hanbughuer Smash com cebola, carne caseira, pao arabe, alface e queijo...</p>
+                <div class="preco">
+                    <h5>R$ 40,87</h5>
+                    <button><i class="bi bi-cart-plus-fill"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- End bebida 1 -->
+        <!-- bebida 2 -->
+        <div class="secao">
+            <div class="imagem">
+                <img src="img/Bebida.jpeg" alt="">
+            </div>
+            <div class="texto">
+                <h2>Hanbughuer Smash</h2>
+                <p>Hanbughuer Smash com cebola, carne caseira, pao arabe, alface e queijo...</p>
+                <div class="preco">
+                    <h5>R$ 40,87</h5>
+                    <button><i class="bi bi-cart-plus-fill"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- End Bebida 2 -->
+        <!-- Bebida 3 -->
+        <div class="secao">
+            <div class="imagem">
+                <img src="img/Bebida.jpeg" alt="">
+            </div>
+            <div class="texto">
+                <h2>Hanbughuer Smash</h2>
+                <p>Hanbughuer Smash com cebola, carne caseira, pao arabe, alface e queijo...</p>
+                <div class="preco">
+                    <h5>R$ 40,87</h5>
+                    <button><i class="bi bi-cart-plus-fill"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- End bebida 3 -->
+    </section>
+    <!-- botao ver carrinho -->
+    <button onclick="abrircarrinho()" class="carrinho">Carrinho(<span id="QuantidadeVerCarrinho">0</span>)</i></button>
+    <!-- carrinho aberto -->
+    <div class="paicarrinho">
+        <div class="carrinhoopen">
+            <h2>Itens do carrinho</h2>
+            <div class="produtocarrinho">
+                <div id="DivProdutosNocard" class="produto">
+                    <!-- <h4>produto temporario</h4>
+                    <p>(quantidade:<span id="Quantidade">0</span>)</p>
+                    <p>R$ 99,99</p> -->
+                </div>
+                <!-- <div class="removerproduto">
+                    <button id="RemoverPedidoBotao">Remover</button>
+                </div> -->
+            </div>
+            <p style="margin-left: 5px; font-size: 14px;">Total: <span id="totalcard">0.00</span></p>
+            <div class="footercart">
+                <div class="endereco">
+                    <p style="font-weight: bold;margin-left: 5px;">Endereço de Entrega</p>
+                    <input id="AddEndereçoInput" style="outline: none;   padding: 3px; width: 100%;;" type="text"
+                        placeholder="Digite seu endereço">
+                    <p id="CampoVazio" style="display: none; color: red;">O campo não pode estar vazio!</p>
+                </div>
+                <div class="Finalizar">
+                    <button style="padding: 3px;" onclick="fecharcard()">Fechar</button>
+                    <button id="FinalizarPedidoBotao"
+                        style="padding: 3px; background-color: green; color: white;">Finalizar Pedido</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p> © Todos os direitos Reservados</p>
+        <p>quem somos contato</p>
+
+    </footer>
+
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
