@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    height: 350px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+header img {
+    box-shadow: rgba(103, 17, 17, 0.48) 6px 2px 16px 0px, rgba(142, 32, 32, 0.8) -6px -2px 16px 0px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+header img:hover {
+    transform: scale(1.2);
+    transition: ease 1000ms;
+}
+
+header {
+    background-image: url(img/fundoheader.avif);
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+
+
+}
+
+.background h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 40px;
+    margin: 5px 0px;
+}
+
+#abertoufechado {
+    font-size: 20pxpx;
+    background: rgb(125, 0, 0);
+    margin: 10px 0px;
+    padding: 6px;
+    border-radius: 5px;
+
+}
+
+section {
+    display: grid;
+    gap: 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1214px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.secao {
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* border: solid red 2px; */
+    height: 150px;
+    width: 400px;
+}
+
+.imagem img {
+    margin: 3px;
+    height: 140px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.imagem img:hover {
+    transform: rotate(3deg);
+    transition: ease 500ms;
+}
+
+.texto h2 {
+    flex-direction: row;
+    padding: 5px;
+    font-size: 20px;
+    /* border: solid green 1px; */
+    width: 100%;
+    height: 30px;
+}
+
+.texto p {
+    margin: 5px 3px;
+    font-size: 15px;
+    /* border: solid orange 1px; */
+    height: 70px;
+}
+
+.preco h5 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.preco {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 4px;
+    /* border: solid red 1px; */
+}
+
+.preco button {
+    width: 45px;
+    height: 25px;
+    color: white;
+    background: green;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    height: 110px;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.carrinho {
+    width: 70%;
+    background-color: brown;
+    padding: 10px 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 15%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.carrinhoopen {
+    display: none;
+    min-width: 450px;
+    border-radius: 5px;
+    /* min-height: 400px; */
+    z-index: 1001;
+    background-color: rgb(255, 255, 255);
+    /* para cntralizar qualquer item porém não fica responsivo */
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  */
+}
+
+.carrinhoopen h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+
+.produtocarrinho {
+    /* border: solid red 1px; */
+    display: flex;
+    flex: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 3px;
+}
+
+.produto {
+    flex: 80%;
+}
+
+.produtocarrinho h4 {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.produtocarrinho p {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* .produtocarrinho h2 {
+        display: flex;
+        flex: 20%;
+        text-align: center;
+        justify-content: end;
+        align-items: end;
+        margin: 3px;
+        padding: 5px;
+    } */
+
+.produtocarrinho button {
+
+    background: none;
+    border: none;
+    /* border: solid rgb(209, 16, 0.9) 1px; */
+    padding: 3px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 500px) {
+    .carrinhoopen {
+        min-width: 90%;
+    }
+}
+
+.footercart {
+    /* border: solid rgb(183, 30, 30) 1px; */
+    flex: 40%;
+    bottom: 0;
+}
+
+.paicarrinho {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+
+}
+
+.Finalizar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    /* border: solid red 1px; */
+    padding: 5px 7px;
+    margin: 3px 3px;
+}
